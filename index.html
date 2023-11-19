@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhà sách trực tuyến</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper.css">
     <script src="https://kit.fontawesome.com/fdb8eaac98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- <link rel="icon" href="https://cdn0.fahasa.com/media/favicon/default/favicon4.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://cdn0.fahasa.com/media/favicon/default/favicon4.ico" type="image/x-icon"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -512,10 +515,61 @@
 
                     </div>
                 </div>
+                <div class="xemthem">
+                    <a href="">Xem Thêm</a>
+                </div>
             </div>
         </div>
-
     </div> 
+    <!-- end xu hướng -->
+
+    <!-- Thương hiệu nổi bật -->
+
+    <div class="thuong-hieu">
+        <div class="xuhuong-head">
+            <span class="iconxh"><img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/icon_dealhot_new.png" alt=""></span>
+            <span class="titlexh">THƯƠNG HIỆU NỔI BẬT</span>
+        </div>
+        <div class="div2-xh"><ul class="loai-xh">
+            <li><a href="">Xu Hướng Theo Ngày</a></li>
+            <li><a href="">Sách HOT - Giảm Sốc</a></li>
+            <li><a href="">Bestseller Ngoại Văn</a></li>
+        </ul></div>
+        <div class="Ke-ngang"></div>
+        <div class="in-xh swiper mySwiper" >
+            <div class="slide-content swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product">
+                        <div class="inner-img"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_18367.jpg" alt=""></div>
+                        <h2 class="product-name"><a href="">The Women In Me</a></h2>
+                            <div class="price-label">
+                                <p class="special-price">
+                                    <span class="product-price">100.700đ</span>
+                                </p>
+                                <p class="old-price" >
+                                    <span class="product-price-old">200.000đ</span>
+                                </p>
+                            </div>
+                            <div class="ratings">
+                                <div class="rating-box"><div class="rating"></div></div>
+                                <div class="ammount">(0)</div>
+                            </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
     <div class="container-inner">
         <div class="row">
             <div class="col4">
@@ -579,7 +633,7 @@
             </div>
             <div class="col8">
                 <div class="row-8">
-                    <div>
+                    <div style="padding-left: 10px;">
                         <div class="title">
                             <h3>DỊCH VỤ
                             </h3>
@@ -635,10 +689,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-title" style="padding-left: 35px;padding-top: 10px;">
+                <div class="footer-title" style="padding-top: 10px;padding-left: 10px;">
                     <h3>LIÊN HỆ</h3>
                 </div>
-                <div class="row-3">
+                <div class="row-3" style="padding-left: 10px;">
                     <div><em class="fa fa-map-marker" style="font-size:18px">&nbsp;</em>60-62 Lê Lợi, Q.1, TP. HCM</div>
                     <div style="padding-right: 140px;"><em class="fa fa-envelope" style="font-size:18px">&nbsp;</em>cskh@fahasa.com.vn</div>
                     <div ><em class="fa fa-phone" style="font-size:18px">&nbsp;</em>1900636467</div>
@@ -667,6 +721,9 @@
 
         </div>
     </div>
+    <!-- swiper js -->
+    <script src="swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
 </body>

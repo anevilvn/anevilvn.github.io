@@ -497,9 +497,10 @@ img{
 .product{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 .xuhuong{
-    min-height: 1050px;
+    min-height: 1100px;
 }
 
 .product-name {
@@ -602,13 +603,49 @@ img{
     position: absolute;
     right: 0;
     left: 0;
-    bottom: -2px;
-    font: 11px  ;
+    bottom: 0px;
+    font-size: 13px  ;
     color: white;
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif, Helvetica, Arial;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.xemthem{
+    width: 1233px;
+    height: 60px;
+    display: flex;
+    padding-top: 30px;
+}
+.xemthem a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 210px;
+    height: 40px;
+    max-width: 100%;
+    border: 2px solid #C92127;
+    border-radius: 15px;
+    color: #C92127;
+    font-weight: 700;
+    font-size: 14px;
 }
 
+/* Thương hiệu */
+
+.thuong-hieu{
+    position: relative;
+    width: 90%;
+    height: 1200px;
+    margin: auto;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+
+
+/* footer */
 .container-inner{
     background-color: #fff;
     position: relative;
@@ -696,14 +733,21 @@ img{
 
 .row-8{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .row-8 > div{
     display: inline-block;
     text-align: left;
+    width: 300px;
 }
 
+.row-8 a:hover{
+    background-position: 0px 10px;
+    padding-left: 25px;
+    color: #ea7696;
+    transition: all 300ms ease-in 0s;
+}
 
 .title,.footer-title{
     font-family: nunito-sans, sans-serif, Helvetica, Arial;
@@ -715,6 +759,11 @@ img{
     list-style: none;
     color: #333333;
 }
+.noidung> ul> li> a{
+    
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/ma_vanesa2/images/icon-footer.png) repeat-y  0 25px;
+    
+}
 
 .noidung ul li{
     padding: 12px;
@@ -724,10 +773,10 @@ img{
 }
 .row-3{
     display: flex;
-    margin-left: 35px;
+    
 }
 .row-3 div{
-    padding-right: 125px;
+    width: 300px;
     font-size: 13px;
 }
 
@@ -735,9 +784,11 @@ img{
     display: grid;
     grid-template-columns:repeat(5,1fr);
     height: 80px;
+    
 }
 .container-img-footer{
-    text-align: center;
+    text-align: left;
+    
 }
 .container-img-footer img{
     max-width: 70%;

@@ -50,3 +50,14 @@ nextbtn.addEventListener('click', e => {
         imgFeature.style.animation='slideright 1s ease-in-out forwards';
     }, 100);
 });
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    grid: {
+      rows: 2,
+    },
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
