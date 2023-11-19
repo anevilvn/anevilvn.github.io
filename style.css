@@ -4,9 +4,17 @@
     padding: 0;
     font-family: sans-serif;
 }
+
+
 body{
+    width: 1500px;
     min-height: 100%;
     background-color: #F0F0F0;
+}
+@media screen and (max-width: 1500px) {
+    body {
+        width: 1500px; /* Đặt chiều rộng là 100% để làm cho trang web đáp ứng */
+    }
 }
 header{
     background-color: #F5F5F5;
@@ -632,16 +640,6 @@ img{
     font-size: 14px;
 }
 
-/* Thương hiệu */
-
-.thuong-hieu{
-    position: relative;
-    width: 90%;
-    height: 1200px;
-    margin: auto;
-    background-color: #fff;
-    padding-bottom: 20px;
-}
 
 
 
@@ -812,4 +810,68 @@ img{
     text-align: center;
     font-size: 13px;
     width: 100%;
+}
+/* Thương hiệu */
+
+.thuong-hieu{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-height: 950px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+.dssanpham{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sanpham{
+    border: 1px solid #F2F4F5;
+    width: 240px;
+    height: 375px;
+}
+
+.img-div{
+    width: 100%;
+    height: auto;
+}
+
+.product-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 15px 0;
+
+}
+.product-image1{
+    width: 220px;
+    height: auto;
+}
+
+.pricexh, .namexh,.ratingsxh{
+    padding-left:  15px;
+}
+
+.namexh a{
+    padding-top: 0px !important;
+    line-height: 1.4em;
+    word-break: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 2.8em;
+    max-height: 2.8em;
+    font-size: 13px;
+    color: #333333;
+    
+    
 }

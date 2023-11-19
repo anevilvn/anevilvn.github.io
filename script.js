@@ -51,13 +51,13 @@ nextbtn.addEventListener('click', e => {
     }, 100);
 });
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     grid: {
       rows: 2,
     },
-    spaceBetween: 30,
+    spaceBetween: 10,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-  });
+});
