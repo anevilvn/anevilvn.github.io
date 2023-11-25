@@ -204,263 +204,7 @@ a{
 /*---menu---*/
 
 
-/*---slide---*/
-.Container{
-    position: relative;
-    width: 90%;
-    height: 80%;
-    margin: 25px auto;
-}
-.main{
-    width: 70%;
-    position: relative;
-    height: 60%;
-    margin-bottom: 0px;
-    overflow: hidden;
-    border-radius: 15px;
-}
-.img-feature{
-    transition: 1s;
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
 
-
-}
-
-
-.list-img{
-    width: 70%;
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 15px;
-
-}
-.list-img div{
-    flex: 1;
-    padding: 5px;
-    cursor: pointer;
-    
-    
-
-}
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 15px;
-
-}
-
-.control{
-    cursor: pointer;
-    position: absolute;
-    top:50%;
-    font-size: 60px;
-    color: wheat;
-    transform: translateY(-50%);
-}
-.prev{
-    left: 5px;
-}
-.next{
-    right: 5px;
-}
-
-
-/*---icon nút nhấn bên trái và phải---*/
-
-.ico_left {
-    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_arrow_gray.svg) no-repeat center center;
-    background-size: contain;
-    background-color: #fff;
-    border-radius: 50%;
-    height: 16px;
-    width: 16px;
-}
-
-.ico_right {
-    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_arrow_gray.svg) no-repeat center center;
-    background-size: contain;
-    height: 16px;
-    width: 16px;
-    background-color: #fff;
-    border-radius: 50%;
-    transform: rotate(-180deg);
-}
-
-.control:hover .ico_left ,.control:hover .ico_right{
-    width: 28px;
-    height: 28px;
-    transition: all 0.3s ease-in-out 0s;;
-    box-shadow: 0px 2px 8px #00000029;
-}
-.active{
-    opacity: 0.8;
-    background:rgb(217, 136, 139);
-    border-radius: 15px;
-
-}
-
-@keyframes slideleft{ /*---animation vị trí kéo thả bên trái và phải---*/
-
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-@keyframes slideright{
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-
-.qc-topright{
-    width: 392px;
-    height: 160px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    
-}
-.qc-botright{
-    width: 392px;
-    height: 160px;
-    position: absolute;
-    top: 156px;
-    right: 0;
-    margin-top: 20px;
-    
-}
-.qc-bot{
-    width: 392px;
-    height: 85px;
-    position: absolute;
-    right: 0;
-    top: 355px;
-}
-
-.banner-block{
-    position: relative;
-    width: 90%;
-    height: 220px;
-    margin: 25px auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.small-banner img{
-    width: 320px;
-   
-}
-
-/*---- icon menu ----*/
-
-.row-icon-menu{
-    position: relative;
-    width: 90%;
-    height: 130px;
-    margin: 10px  auto;
-    padding: 15px 4px;
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #FFFFFF;
-    font-size: 14px;    
-    text-align: center;
-    border-radius: 8px;
-}
-
-.row-content{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.row-content img{
-     width: 40%;
-     margin-bottom: 5px;
-}
-.row-item-name{
-    height: 50px;
-}
-
-/* danh mục sản phẩm */
-.danhmucsp {
-    position: relative;
-    margin: auto;
-    width: 90%;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px; 
-    box-sizing: border-box; 
-}
-
-.danhmuc-head {
-    width: 100%;
-    text-align: left; 
-}
-
-.head-tittle {
-    position: absolute;
-    font-size: 1.6em;
-    font-weight: bold;
-    color: black;   
-    letter-spacing: 0px;
-    
-}
-
-.tittle-icon img {
-    background-size: contain;
-    height: 32px;
-    width: 32px;
-    margin-right: 15px;
-}
-
-.cont-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.danhmuc-content {
-    text-align: center;
-    align-items: center;
-    align-content: center;
-}
-.danhmuc-content a{
-    text-decoration: none;
-}
-.danhmuc-content div{
-    text-align: center;
-    color: black;
-    font-size: 1.2em;
-    line-height: 1.4em;
-    height: 55.1px;
-    margin-top: 16px;
-    min-height: 2.8em;
-    max-height: 2.8em;
-    font-weight: 400;
-}
-
-.danhmuc-content img {
-    max-width: 100px;
-}
-
-.danhmuc-content:hover div{
-    color: #C92127;
-    transition: .5s;
-}
 .Ke-ngang{
     width: 100%;
     height: 2px;
@@ -477,7 +221,7 @@ img{
 
 .xuhuong{
     width: 90%;
-    height: 950px;
+    min-height: 950px;
     background-color: #fff;
     margin: auto;
     margin-top: 25px;
@@ -714,7 +458,6 @@ img{
 .row{
     height: 510px;
 }
-
 .col4{
     margin-top: 50px;
     position: absolute;
@@ -724,7 +467,6 @@ img{
     padding: 0 15px 0 15px;
     border-right: 1px solid #cecece;
 }
-
 .col4 div   {
     max-height: 80px;
     font-size: 13px;
@@ -733,14 +475,12 @@ img{
     color: #333333;
     line-height: 1.2rem;
 }
-
 .logo img{
     margin-top: 20px;
     max-width: 80%;
     height: auto;
     border-radius: 0;
 }
-
 .col8{
     margin-top: 50px;
     position: absolute;
@@ -750,7 +490,6 @@ img{
     background-color: #fff;
     padding: 0 15px 0 15px;
 }
-
 .nd a img{
     display: block;
     padding-top: 10px;
@@ -769,7 +508,6 @@ img{
     padding-bottom: 60px;
     display: block;
 }
-
 .icon-footer a img{
     width: 40px;
     height: 42px;
@@ -782,30 +520,25 @@ img{
 .dow div{
     padding-right: 10px;
 }
-
 .dow img{
     max-width: 140px;
     max-height: 41px;
 }
-
 .row-8{
     display: flex;
     /* justify-content: space-around; */
 }
-
 .row-8 > div{
     display: inline-block;
     text-align: left;
     width: 300px;
 }
-
 .row-8 a:hover{
     background-position: 0px 10px;
     padding-left: 25px;
     color: #ea7696;
     transition: all 300ms ease-in 0s;
 }
-
 .title,.footer-title{
     font-family: nunito-sans, sans-serif, Helvetica, Arial;
     font-size: 16px;
@@ -821,7 +554,6 @@ img{
     background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/ma_vanesa2/images/icon-footer.png) repeat-y  0 25px;
     
 }
-
 .noidung ul li{
     padding: 12px;
     padding-left: 0;
@@ -836,7 +568,6 @@ img{
     width: 300px;
     font-size: 13px;
 }
-
 .doi-tac{
     display: grid;
     grid-template-columns:repeat(5,1fr);
@@ -853,8 +584,6 @@ img{
     object-fit: contain;
     text-align: center;
 }
-
-
 .row-bottom{
     display:flex;
     position: absolute;
@@ -869,68 +598,4 @@ img{
     text-align: center;
     font-size: 13px;
     width: 100%;
-}
-/* Thương hiệu */
-
-.thuong-hieu{
-    position: relative;
-    margin: auto;
-    width: 90%;
-    max-height: 950px;
-    background-color: #fff;
-    margin-bottom: 50px;
-}
-.dssanpham{
-    width: 95%;
-    height: auto;
-    margin: auto;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.sanpham{
-    border: 1px solid #F2F4F5;
-    width: 240px;
-    height: 375px;
-}
-
-.img-div{
-    width: 100%;
-    height: auto;
-}
-
-.product-image{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 15px 0 15px 0;
-
-}
-.product-image1{
-    width: 220px;
-    height: auto;
-}
-
-.pricexh, .namexh,.ratingsxh{
-    padding-left:  15px;
-}
-
-.namexh a{
-    padding-top: 0px !important;
-    line-height: 1.4em;
-    word-break: break-word;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    min-height: 2.8em;
-    max-height: 2.8em;
-    font-size: 13px;
-    color: #333333;
-    
-    
 }
