@@ -3,6 +3,7 @@ var listimg = document.querySelectorAll('.list-img img');
 var prevbtn = document.querySelector('.prev');
 var nextbtn = document.querySelector('.next');
 var currentIndex = 0;
+var interval;
 
 function updateImgByIndex(index) {
     // remove active class
@@ -25,39 +26,42 @@ listimg.forEach((imgElement, index) => {
     });
 });
 
-
 prevbtn.addEventListener('click', e => {
-
-    imgFeature.style.animation=''
+    imgFeature.style.animation = '';
     currentIndex = (currentIndex - 1 + listimg.length) % listimg.length;
 
-
-    imgFeature.style.animation=''
+    imgFeature.style.animation = '';
     setTimeout(() => {
         updateImgByIndex(currentIndex);
-        imgFeature.style.animation='slideleft 1s ease-in-out forwards';
-
+        imgFeature.style.animation = 'slideleft 1s ease-in-out forwards';
     }, 100);
 });
 
 nextbtn.addEventListener('click', e => {
     currentIndex = (currentIndex + 1) % listimg.length;
 
-
-    imgFeature.style.animation=''
+    imgFeature.style.animation = '';
     setTimeout(() => {
         updateImgByIndex(currentIndex);
-        imgFeature.style.animation='slideright 1s ease-in-out forwards';
+        imgFeature.style.animation = 'slideright 1s ease-in-out forwards';
     }, 100);
 });
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    grid: {
-      rows: 2,
-    },
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+
+function autoSlide() {
+    interval = setInterval(() => {
+        nextbtn.click();
+    }, 3000);
+}
+
+// Ngừng chuyển động khi hover
+listimg.forEach(imgElement => {
+    imgElement.addEventListener('mouseenter', () => {
+        clearInterval(interval);
+    });
+
+    imgElement.addEventListener('mouseleave', () => {
+        autoSlide();
+    });
 });
+
+autoSlide();
